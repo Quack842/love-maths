@@ -17,12 +17,42 @@
     </h1>
     <!-- Game Area -->
     <div class="game-area">
-        <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incurrect Answers <span id="incurrect">0</span></p>
+        <!-- Controls -->
+        <div class="controls-area">
+            <!-- Green Plus -->
+            <button class="btn btn--big btn--green">
+                <i class="fas fa-plus"></i>
+            </button>
+            <!-- blue minus -->
+            <button class="btn btn--big btn--blue">
+                <i class="fas fa-minus"></i>
+            </button>
+            <!-- blue times -->
+            <button class="btn btn--big btn--orange">
+                <i class="fas fa-times"></i>
+            </button>
+            <!-- blue divide -->
+            <button class="btn btn--big btn--red">
+                <i class="fas fa-divide"></i>
+            </button>
+        </div>
+
+        <!-- Question Area -->
+        <div class="question-area">
+            <span id="operand1">0</span>
+            <span id="operator">x</span>
+            <span id="operand2">0</span>
+            <span>=</span>
+            <p class="answer-message">Enter Answer: </p>
+
+            <input id="answer-box" type="number" >
+        </div>
+        <button class="btn btn--gray">Submit Answer</button>
     </div>
     <!-- Score Area -->
     <div class="score-area">
-
+        <p class="scores">Correct Answers: <span id="score">0</span></p>
+        <p class="scores">Incurrect Answers: <span id="incurrect">0</span></p>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
